@@ -25,17 +25,29 @@ modules:
       install-weak-deps: false
       packages:
         - micro
+        - emacs
         - niri
+        - sway
         - dms
-        - NetworkManager-wifi
         - xwayland-satellite
+        - NetworkManager-wifi
+        - bluez
+        - bluez-tools
         - alsa-sof-firmware
         - pipewire
         - pipewire-pulseaudio
         - pipewire-alsa
         - wireplumber
-        - emacs
-
+        - brightnessctl
+        - power-profiles-daemon
+        - polkit
+        - lxqt-policykit
+        
+    group-install:
+      install-weak-deps: false
+      packages:
+        - core
+        
   - type: default-flatpaks
     configurations:
       - notify: true # Send notification after install/uninstall is finished (true/false)
