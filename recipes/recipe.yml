@@ -25,23 +25,45 @@ modules:
       install-weak-deps: false
       packages:
         - micro
+        - NetworkManager-l2tp-gnome
+        - NetworkManager-libreswan-gnome
+        - NetworkManager-openconnect-gnome
+        - NetworkManager-openvpn-gnome
+        - NetworkManager-sstp-gnome
+        - NetworkManager-vpnc-gnome
+        - Thunar
+        - alacritty
+        - gnome-keyring-pam
+        - gvfs
+        - gvfs-smb
+        - gvfs-mtp
+        - lxqt-policykit
+        - mesa-dri-drivers
+        - mesa-vulkan-drivers
+        - pavucontrol
+        - pinentry-gnome3
+        - playerctl
+        - polkit
+        - pulseaudio-utils
+        - power-profiles-daemon
+        - thunar-archive-plugin
+        - wev
         - emacs
+        - wl-clipboard
+        - xarchiver
+        - xdg-desktop-portal-gtk
+        - xdg-desktop-portal-wlr
+        - xorg-x11-server-Xwayland
         - niri
-        - sway
         - dms
         - xwayland-satellite
-        - NetworkManager-wifi
         - bluez
-        - bluez-tools
-        - alsa-sof-firmware
+        - bluez-utils
         - pipewire
-        - pipewire-pulseaudio
-        - pipewire-alsa
         - wireplumber
+        - pipewire-alsa
         - brightnessctl
-        - power-profiles-daemon
-        - polkit
-        - lxqt-policykit
+
         
     group-install:
       install-weak-deps: false
