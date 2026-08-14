@@ -63,6 +63,12 @@ modules:
         - alsa-sof-firmware
         - flatpak
         - glibc-langpack-en
+        - adw-gtk3-theme
+        
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - JetBrainsMono
 
         
     #group-install:
