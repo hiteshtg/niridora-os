@@ -62,12 +62,13 @@ modules:
         - iwlwifi-mvm-firmware
         - alsa-sof-firmware
         - flatpak
+        - glibc-langpack-en
 
         
-    group-install:
-      install-weak-deps: false
-      packages:
-        - core
+    #group-install:
+      #install-weak-deps: false
+      #packages:
+        #- core
  
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
