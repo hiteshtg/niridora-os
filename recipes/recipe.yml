@@ -56,20 +56,17 @@ modules:
         - wireplumber
         - pipewire-alsa
         - brightnessctl
+        - NetworkManager-wifi
+        - iwlwifi-dvm-firmware
+        - iwlwifi-mld-firmware
+        - iwlwifi-mvm-firmware
+        - alsa-sof-firmware
 
         
     group-install:
       install-weak-deps: false
       packages:
         - core
-        
-  - type: default-flatpaks
-    configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
-        scope: system
-        # If no repo information is specified, Flathub will be used by default
-        install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
-      - scope: user # Also add Flathub user repo, but no user packages
+ 
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
