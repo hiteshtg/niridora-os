@@ -64,12 +64,26 @@ modules:
         - flatpak
         - glibc-langpack-en
         - adw-gtk3-theme
+        - qemu-kvm
+        - libvirt
+        - virt-install
+        - virt-manager
+        - libvirt-daemon-config-network
+        - dnsmasq
+        - edk2-ovmf
+        - spice-vdagent
+        - qemu-guest-agent
+        - swtpm
         
   - type: fonts
     fonts:
       nerd-fonts:
         - JetBrainsMono
-
+        
+  - type: systemd
+    system:
+      enabled:
+        - libvirtd.service
         
     #group-install:
       #install-weak-deps: false
