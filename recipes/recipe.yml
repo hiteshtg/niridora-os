@@ -34,7 +34,7 @@ modules:
         - lxqt-policykit
         - mesa-dri-drivers
         - mesa-vulkan-drivers
-        - pavucontrol
+        - pipewire-pulseaudio
         - pinentry-gnome3
         - playerctl
         - polkit
@@ -64,37 +64,11 @@ modules:
         - flatpak
         - glibc-langpack-en
         - adw-gtk3-theme
-        - qemu-kvm
-        - libvirt
-        - virt-install
-        - virt-manager
-        - libvirt-daemon-config-network
-        - dnsmasq
-        - edk2-ovmf
-        - spice-vdagent
-        - qemu-guest-agent
-        - swtpm
-        - grub2-efi-x64-cdboot
-        - grub2-common
-        - grub2-pc-modules
-        - shim-x64
-
-  - type: script
-    snippets:
-    - |
-        set -eux
-        mkdir -p /boot/efi
-        cp -ra /usr/lib/efi/*/*/EFI /boot/efi
         
   - type: fonts
     fonts:
       nerd-fonts:
         - JetBrainsMono
-        
-  - type: systemd
-    system:
-      enabled:
-        - libvirtd.service
         
     #group-install:
       #install-weak-deps: false
