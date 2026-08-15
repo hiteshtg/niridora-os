@@ -74,6 +74,17 @@ modules:
         - spice-vdagent
         - qemu-guest-agent
         - swtpm
+        - grub2-efi-x64-cdboot
+        - grub2-common
+        - grub2-pc-modules
+        - shim-x64
+
+  - type: script
+    snippets:
+    - |
+        set -eux
+        mkdir -p /boot/efi
+        cp -ra /usr/lib/efi/*/*/EFI /boot/efi
         
   - type: fonts
     fonts:
