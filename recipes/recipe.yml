@@ -65,6 +65,7 @@ modules:
         - glibc-langpack-en
         - adw-gtk3-theme
         - kde-connect
+        - alsa-utils
         
   - type: fonts
     fonts:
