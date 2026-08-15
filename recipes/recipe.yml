@@ -66,6 +66,10 @@ modules:
         - adw-gtk3-theme
         - kde-connect
         - alsa-utils
+        - qemu-kvm
+        - libvirt
+        - virt-install
+        - virt-manager
         
   - type: fonts
     fonts:
