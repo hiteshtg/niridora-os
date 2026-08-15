@@ -64,6 +64,7 @@ modules:
         - flatpak
         - glibc-langpack-en
         - adw-gtk3-theme
+        - kde-connect
         
   - type: fonts
     fonts:
