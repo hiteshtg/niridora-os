@@ -74,6 +74,7 @@ modules:
         - kmod
         - xorg-x11-drv-nvidia-power
         - xorg-x11-drv-nvidia
+        - kmod-nvidia
         
   - type: fonts
     fonts:
