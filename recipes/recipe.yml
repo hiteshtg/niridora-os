@@ -78,7 +78,7 @@ modules:
 
   - type: akmods
     nvidia-driver: 
-        - nvidia
+        - nvidia-open
 
   - type: kargs
     kargs:
