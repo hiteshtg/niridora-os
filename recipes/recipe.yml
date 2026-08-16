@@ -71,6 +71,7 @@ modules:
         - virt-install
         - virt-manager
         - akmod-nvidia
+        - xorg-x11-drv-nvidia-power
         
   - type: fonts
     fonts:
