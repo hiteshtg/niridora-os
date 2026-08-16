@@ -77,7 +77,7 @@ modules:
         - JetBrainsMono
 
   - type: akmods
-    intall:
+    install:
       nvidia-driver: 
         - nvidia-open
 
