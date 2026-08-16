@@ -77,6 +77,11 @@ modules:
     fonts:
       nerd-fonts:
         - JetBrainsMono
+
+  - type: kargs
+    kargs:
+        - rd.driver.blacklist=nouveau
+        - modprobe.blacklist=nouveau
         
     #group-install:
       #install-weak-deps: false
