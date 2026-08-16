@@ -77,7 +77,8 @@ modules:
         - JetBrainsMono
 
   - type: akmods
-    nvidia-driver: nvidia
+    nvidia-driver: 
+        - nvidia
 
   - type: kargs
     kargs:
