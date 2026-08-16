@@ -70,16 +70,15 @@ modules:
         - libvirt
         - virt-install
         - virt-manager
+        - akmod-nvidia
+        - kmod
         
   - type: fonts
     fonts:
       nerd-fonts:
         - JetBrainsMono
 
-  - type: akmods
-    install:
-    nvidia-driver: open
-
+  
   - type: kargs
     kargs:
         - rd.driver.blacklist=nouveau
