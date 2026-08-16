@@ -70,18 +70,20 @@ modules:
         - libvirt
         - virt-install
         - virt-manager
-        - akmod-nvidia
-        - xorg-x11-drv-nvidia-power
         
   - type: fonts
     fonts:
       nerd-fonts:
         - JetBrainsMono
 
+  - type: akmods
+    nvidia-driver: nvidia
+
   - type: kargs
     kargs:
         - rd.driver.blacklist=nouveau
         - modprobe.blacklist=nouveau
+        - nvidia-drm.modeset=1
         
     #group-install:
       #install-weak-deps: false
