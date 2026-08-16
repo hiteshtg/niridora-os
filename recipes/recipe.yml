@@ -70,6 +70,7 @@ modules:
         - libvirt
         - virt-install
         - virt-manager
+        - akmod-nvidia
         
   - type: fonts
     fonts:
