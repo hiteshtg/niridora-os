@@ -6,7 +6,7 @@ name: niridora-os
 description: This is my personal OS image.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: quay.io/fedora/fedora-bootc
+base-image: ghcr.io/ublue-os/base-main
 image-version: latest # You can pin to a specific version of Fedora as well
 
 # module configuration, executed in order
@@ -70,17 +70,16 @@ modules:
         - libvirt
         - virt-install
         - virt-manager
-        - akmod-nvidia
-        - kmod
-        - xorg-x11-drv-nvidia-power
-        - xorg-x11-drv-nvidia
-        - kmod-nvidia
+
         
   - type: fonts
     fonts:
       nerd-fonts:
         - JetBrainsMono
 
+  - type: akmods
+    install:
+    nvidia-drivers: nvidia-open
   
   - type: kargs
     kargs:
