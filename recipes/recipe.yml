@@ -78,7 +78,7 @@ modules:
         - JetBrainsMono
 
   - type: akmods
-    install: []
+    install: 
     nvidia-driver: nvidia-open
   
   - type: kargs
